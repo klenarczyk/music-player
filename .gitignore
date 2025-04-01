@@ -9,38 +9,65 @@
 !/frontend/.yarn/releases
 !/frontend/.yarn/versions
 
-# testing
+# Testing
 /frontend/coverage
 
-# next.js
+# Next.js
 /frontend/.next/
 /frontend/out/
 
-# production
+# Production
 /frontend/build
 
-# misc
+# Misc
 .DS_Store
 *.pem
 
-# debug
+# Debug
 /frontend/npm-debug.log*
 /frontend/yarn-debug.log*
 /frontend/yarn-error.log*
 /frontend/.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# ENV files
 /frontend.env*
 
-# vercel
+# Vercel
 /frontend/.vercel
 
-# typescript
+# Typescript
 /frontend/*.tsbuildinfo
 /frontend/next-env.d.ts
 
 ## Backend
+# Backend specific ignores
+/backend/target/
+!/backend/.mvn/wrapper/maven-wrapper.jar
+!/backend/**/src/main/**/target/
+!/backend/**/src/test/**/target/
+
+### STS ###
+/backend/.apt_generated
+/backend/.classpath
+/backend/.factorypath
+/backend/.project
+/backend/.settings
+/backend/.springBeans
+/backend/.sts4-cache
+
+### NetBeans ###
+/backend/nbproject/private/
+/backend/nbbuild/
+/backend/dist/
+/backend/nbdist/
+/backend/.nb-gradle/
+/backend/build/
+!/backend/**/src/main/**/build/
+!/backend/**/src/test/**/build/
 
 ## IDEs
-/.idea
 /.vscode
+/.idea
+/*.iws
+/*.iml
+/*.ipr
