@@ -1,24 +1,46 @@
-# Compiled class file
-*.class
+## Frontend
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
 
-# Log file
-*.log
+# testing
+/frontend/coverage
 
-# BlueJ files
-*.ctxt
+# next.js
+/frontend/.next/
+/frontend/out/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# production
+/frontend/build
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# misc
+.DS_Store
+*.pem
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# debug
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+/frontend.env*
+
+# vercel
+/frontend/.vercel
+
+# typescript
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+## Backend
+
+## IDEs
+/.idea
+/.vscode
